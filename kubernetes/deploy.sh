@@ -13,6 +13,10 @@ docker push borgito/app-devops:1.0
 
 cd ..
 
+# - Criar namespace para deploy
+
+kubectl create ns dev 
+
 # - Define Dnsname
 ip_ingress=$(minikube ip)
 

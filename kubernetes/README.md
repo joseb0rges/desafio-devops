@@ -26,3 +26,16 @@ Dentro deste repositório existe um subdiretório **App** e um **Dockerfile** qu
 * Pode se utilizar o [Minikube](https://github.com/kubernetes/minikube) ou [Docker for Mac/Windows](https://docs.docker.com/docker-for-mac/) para execução do desafio e realização de testes.
 
 * Não é necessário realizar o _upload_ da imagem Docker para um registro público, você pode construir a imagem localmente e utilizá-la diretamente.
+
+
+## Detalhamento da implementação 
+
+* Foi ultilizado minikube, segue abaixo as etapas para implentação
+
+1 - Crie repositorio no dockerhub e realize o login no seu repo : **docker login**
+
+2 - Execute o script para deploy da aplicação: bash deploy.sh
+
+3 - Apos o deploy, verifique se os pods estão de pé: **kubectl get pods -n dev**
+
+Obs.: Verifique se o **helm** está instalado em seu script. Essa implementação foi usado o sistema operacional Linux.
