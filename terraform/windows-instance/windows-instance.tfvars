@@ -1,0 +1,3 @@
+INSTANCE_USERNAME = "Administrador"
+INSTANCE_PASSWORD = "gTxXABzaHU2tXH8GXBAm"
+KEYNAME = "win-server"
